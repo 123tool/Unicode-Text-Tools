@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPY-E | Unicode Tool Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/codemirror.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="brand-box">
+            <h1 class="glitch">SPY-E</h1>
+            <p class="tagline">123TOOL • UNICODE ENGINE</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="toolbar">
+            <div class="control-group main-controls">
+                <button class="normal action-btn clear-btn" title="Reset Font" data-clear="true">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M2.586,15.408l4.299,4.299C7.072,19.895,7.326,20,7.592,20h0.001h2h0.4h9.6v-2h-6.958l7.222-7.222 c0.78-0.779,0.78-2.049,0-2.828L14.906,3c-0.779-0.779-2.049-0.779-2.828,0l-4.75,4.749l-4.754,4.843 C1.809,13.371,1.813,14.634,2.586,15.408z"></path></svg>
+                </button>
+                <button class="sansBold font-btn" title="Bold">𝗕</button>
+                <button class="sansItalic font-btn" title="Italic">𝘐</button>
+                <button class="monospace font-btn" title="Monospace">𝙼</button>
+                <button class="font-btn" title="Underline" data-append="͟" style="text-decoration: underline">U</button>
+                <button class="font-btn" title="Strikethrough" data-append="̶" style="text-decoration: line-through">S</button>
+            </div>
+
+            <details class="more-options">
+                <summary>ADVANCED FONTS & STYLES</summary>
+                <div class="grid-controls">
+                    <button class="sans font-btn">𝖬</button>
+                    <button class="sansBoldItalic font-btn">𝘽𝙄</button>
+                    <button class="serifBold font-btn">𝐁</button>
+                    <button class="serifItalic font-btn">𝐼</button>
+                    <button class="doubleStruck font-btn">mathbb{D}</button>
+                    <button class="fraktur font-btn">𝔉</button>
+                    <button class="script font-btn">𝒮</button>
+                    <button class="circled font-btn">Ⓒ</button>
+                    <button class="squaredNegative font-btn">🆂</button>
+                    <button class="smallCaps font-btn">ᴀʙ</button>
+                    <button class="inverted font-btn">∀</button>
+                    <button class="mirrored font-btn">Я</button>
+                </div>
+            </details>
+        </section>
+
+        <div class="editor-wrapper">
+            <textarea id="main-editor">Type or paste your text here... Modify with SPY-E Power!</textarea>
+        </div>
+
+        <div class="action-footer">
+            <button class="btn btn-primary" onclick="formatter.copy(this)">
+                <span>COPY OUTPUT</span>
+            </button>
+            <button class="btn btn-secondary" onclick="formatter.clearAll()">
+                <span>CLEAR ALL</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="legal-footer">
+        <p>© 2026 SPY-E 123TOOL. PROFESSIONAL GRADE UTILITIES.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
